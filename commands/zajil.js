@@ -11,7 +11,7 @@ module.exports = {
   callback: async ({ message, client, args }) => {
     if (!message.guild) {
       let tagged = client.users.cache.get(args[0]);
-      let zajilMessage = args.slice(1).join(" ");
+      let zajilMessage = args.slice(1).join(" ");               
       let zajilEmbed = new MessageEmbed()
         .setColor("Green")
         .setTitle("زاجل جديد .")
